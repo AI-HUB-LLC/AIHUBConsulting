@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c988cb3.css",
+    "main.js": "/static/js/main.048c65e2.js",
+    "static/js/453.0f7f82df.chunk.js": "/static/js/453.0f7f82df.chunk.js",
+    "static/media/thumbnail_Designer.png": "/static/media/thumbnail_Designer.70fe2c8895bd48c1de4e.png",
+    "static/media/Feria.png": "/static/media/Feria.1c495000e9f19980befa.png",
+    "static/media/hero-bg.jpg": "/static/media/hero-bg.6f6bb3f13bc5cfc918ff.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.0c988cb3.css.map": "/static/css/main.0c988cb3.css.map",
+    "main.048c65e2.js.map": "/static/js/main.048c65e2.js.map",
+    "453.0f7f82df.chunk.js.map": "/static/js/453.0f7f82df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c988cb3.css",
+    "static/js/main.048c65e2.js"
+  ]
+}
