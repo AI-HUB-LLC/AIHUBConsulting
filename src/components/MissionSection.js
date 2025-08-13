@@ -1,5 +1,4 @@
 import React from 'react';
-import VisionSection from './VisionSection';
 import '../App.css';
 
 function MissionSection() {
