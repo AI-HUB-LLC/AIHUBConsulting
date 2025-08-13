@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import thumbnailDesigner from '../assets/thumbnail_Designer.png';
 
 function ServicesSection() {
   return (
@@ -35,17 +36,13 @@ function ServicesSection() {
         {/* Construction & Engineering */}
         <div className="service-card">
           <div className="service-icon">🏗️</div>
-          <h3>AI Enabled Construction & Smart City Solutions</h3>
+          <h3>AI Construction</h3>
           <ul>
-            <li>Concrete, drywall, painting</li>
-            <li>Site prep, grading, code compliance</li>
-            <li>Public infrastructure & commercial builds</li>
-            <li>Smart Building Construction</li>
             <li>IoT Integration for Building Management</li>
             <li>Smart Energy Management Systems</li>
             <li>Automated Construction Monitoring: Use sensors, drones, and AI to track construction progress</li>
             <li>Building Information Modeling (BIM) with AI Enhancements</li>
-            <li>Smart Safety and Security Systems</li>
+            <li>Smart construction support: predictive maintenance, IoT sensor networks, erosion control, and sustainable design</li>
           </ul>
           <a href="#construction" className="btn btn-secondary">Request Quote</a>
         </div>
@@ -54,20 +51,21 @@ function ServicesSection() {
           <div className="service-icon">👥</div>
           <h3>Staffing & Recruitment</h3>
           <ul>
-            <li>IT engineers, developers</li>
-            <li>Healthcare & lab staff</li>
-            <li>Administrative & temp placements</li>
+            <li>IT engineers, Application developers, AI data scientist, Data architecture, ML engineering.</li>
+            <li>Project and Program Management</li>
+            <li>Administrative & Temp Placements</li>
           </ul>
           <a href="#staffing" className="btn btn-secondary">Request Quote</a>
         </div>
-        {/* Supply & Distribution */}
+
         <div className="service-card">
-          <div className="service-icon">🏢</div>
-          <h3>Supply & Distribution</h3>
+          <div className="service-icon"><img src={thumbnailDesigner} style={{width: '100px', height: '100px'}} alt="AI Hub Elder"/></div>
+          <h3>Elderly Care - Products for Aging and Acessability</h3>
           <ul>
-            <li>Construction materials</li>
-            <li>Plastics & IT equipment</li>
-            <li>Municipal and commercial procurement</li>
+            <li>Voice-first AI companions featuring modular agents for reminders, emotional support, wellness check-ins, entertainment, and cognitive stimulation</li>
+            <li>AI-powered “Howdy” check-in calls with proactive mental health interventions, distress detection, and escalation to caregivers or emergency services</li>
+            <li>Multi-agent orchestration for seamless context switching, powered by fine-tuned LLMs and RAG (Retrieval-Augmented Generation)</li>
+        
           </ul>
           <a href="#supply" className="btn btn-secondary">Request Quote</a>
         </div>
