@@ -18,6 +18,13 @@ const NAV_LINKS = [
 function App() {
   return (
     <div className="App">
+      {/* Floating Tech Elements */}
+      <div className="tech-circuit"></div>
+      <div className="floating-tech">⚡</div>
+      <div className="floating-tech">🔮</div>
+      <div className="floating-tech">💎</div>
+      <div className="floating-tech">🌟</div>
+      
       <nav className="navbar">
         <div className="navbar-logo-group">
           <img src={logo} alt="AI HUB Logo" className="navbar-logo-img" />
