@@ -19,7 +19,12 @@ function ContactSection() {
           </p>
           <p className="contact-text">
             <strong>Email:</strong><br />
-            info@aihubagents.com
+            feria@aihubagents.com
+          </p>
+
+          <p className="contact-text">
+            <strong>Capability Statement:</strong><br />
+            <a href="/CapabilityStatement.pdf" target="_blank" rel="noopener noreferrer">Open Document</a>
           </p>
         </div>
         <form className="contact-form" onSubmit={e => e.preventDefault()}>
