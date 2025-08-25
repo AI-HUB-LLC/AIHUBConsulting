@@ -20,6 +20,7 @@ const NAV_LINKS = [
 function App() {
   return (
     <div className="App">
+
       {/* Animated Particles Background */}
       <div className="particles-container">
         <div className="particle"></div>
@@ -38,6 +39,14 @@ function App() {
         <div className="particle"></div>
         <div className="particle"></div>
       </div>
+
+      {/* Floating Tech Elements */}
+      <div className="tech-circuit"></div>
+      <div className="floating-tech">⚡</div>
+      <div className="floating-tech">🔮</div>
+      <div className="floating-tech">💎</div>
+      <div className="floating-tech">🌟</div>
+
       
       <nav className="navbar">
         <div className="navbar-logo-group">
