@@ -24,16 +24,7 @@ function AboutSection() {
           </ul>
         </div>
       </div>
-      <div className="timeline-section">
-        <h3 className="timeline-title">Company Milestones</h3>
-        <ul className="timeline">
-          <li><span className="timeline-dot" /> <strong>2024</strong> - Company founded in Houston, TX</li>
-          <li><span className="timeline-dot" /> <strong>2025</strong> - Achieved WOSB, WBENC, and SBA certifications</li>
-          <li><span className="timeline-dot" /> <strong>2026</strong> - Secured first major city contract (Houston)</li>
-          <li><span className="timeline-dot" /> <strong>2027</strong> - Expanded to federal and global contracts</li>
-          <li><span className="timeline-dot" /> <strong>2028</strong> - Launched AI HUB product division</li>
-        </ul>
-      </div>
+  
     </section>
   );
 }
