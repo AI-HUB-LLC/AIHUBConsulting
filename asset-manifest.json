@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AIHUBConsulting/static/css/main.06d445f2.css",
-    "main.js": "/AIHUBConsulting/static/js/main.86ebe5d4.js",
-    "static/js/453.0f7f82df.chunk.js": "/AIHUBConsulting/static/js/453.0f7f82df.chunk.js",
-    "static/media/thumbnail_Designer.png": "/AIHUBConsulting/static/media/thumbnail_Designer.70fe2c8895bd48c1de4e.png",
-    "static/media/AI HUB Logo Completed.png": "/AIHUBConsulting/static/media/AI HUB Logo Completed.99451f3dde93a889ae88.png",
-    "static/media/Feria.png": "/AIHUBConsulting/static/media/Feria.1c495000e9f19980befa.png",
-    "index.html": "/AIHUBConsulting/index.html",
-    "main.06d445f2.css.map": "/AIHUBConsulting/static/css/main.06d445f2.css.map",
-    "main.86ebe5d4.js.map": "/AIHUBConsulting/static/js/main.86ebe5d4.js.map",
-    "453.0f7f82df.chunk.js.map": "/AIHUBConsulting/static/js/453.0f7f82df.chunk.js.map"
+    "main.css": "/static/css/main.06d445f2.css",
+    "main.js": "/static/js/main.b6e69148.js",
+    "static/js/453.0f7f82df.chunk.js": "/static/js/453.0f7f82df.chunk.js",
+    "static/media/thumbnail_Designer.png": "/static/media/thumbnail_Designer.70fe2c8895bd48c1de4e.png",
+    "static/media/AI HUB Logo Completed.png": "/static/media/AI HUB Logo Completed.99451f3dde93a889ae88.png",
+    "static/media/Feria.png": "/static/media/Feria.1c495000e9f19980befa.png",
+    "index.html": "/index.html",
+    "main.06d445f2.css.map": "/static/css/main.06d445f2.css.map",
+    "main.b6e69148.js.map": "/static/js/main.b6e69148.js.map",
+    "453.0f7f82df.chunk.js.map": "/static/js/453.0f7f82df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06d445f2.css",
-    "static/js/main.86ebe5d4.js"
+    "static/js/main.b6e69148.js"
   ]
 }
