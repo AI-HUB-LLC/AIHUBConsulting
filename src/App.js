@@ -20,12 +20,33 @@ const NAV_LINKS = [
 function App() {
   return (
     <div className="App">
+
+      {/* Animated Particles Background */}
+      <div className="particles-container">
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+      </div>
+
       {/* Floating Tech Elements */}
       <div className="tech-circuit"></div>
       <div className="floating-tech">⚡</div>
       <div className="floating-tech">🔮</div>
       <div className="floating-tech">💎</div>
       <div className="floating-tech">🌟</div>
+
       
       {/* Animated Particles Background */}
       <div className="particles-container">
