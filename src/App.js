@@ -48,6 +48,25 @@ function App() {
       <div className="floating-tech">🌟</div>
 
       
+      {/* Animated Particles Background */}
+      <div className="particles-container">
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+      </div>
+      
       <nav className="navbar">
         <div className="navbar-logo-group">
           <img src={logo} alt="AI HUB Logo" className="navbar-logo-img" />

@@ -24,6 +24,7 @@ function AboutSection() {
           </ul>
         </div>
       </div>
+  
     </section>
   );
 }

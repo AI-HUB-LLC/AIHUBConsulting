@@ -1,0 +1,18 @@
+* [33m4847152[m[33m ([m[1;36mHEAD -> [m[1;32mupdate-statement[m[33m)[m update logo and statement
+* [33m03a93a1[m Update capability statement and AI agent services section
+* [33m0761a58[m[33m ([m[1;32mmaster[m[33m)[m Configure for GitHub Pages deployment with custom domain
+[31m|[m * [33mab1da8b[m[33m ([m[1;31morigin/master[m[33m)[m Update GitHub Actions workflow with proper permissions
+[31m|[m * [33m5f2e3fd[m Fix ESLint error: remove unused VisionSection import
+[31m|[m *   [33mbf07c01[m Merge branch 'master' of https://github.com/AI-HUB-LLC/AIHUBConsulting
+[31m|[m [33m|[m[34m\[m  
+[31m|[m [33m|[m * [33md24b3d0[m from cursor feria
+[31m|[m * [34m|[m [33m5c2c0d4[m add github actions workflow for automatic deployment
+[31m|[m [34m|[m[34m/[m  
+[31m|[m * [33m6c4ea7e[m update website with modern AI Background
+[31m|[m[31m/[m  
+* [33m4fba8b1[m[33m ([m[1;31malicia/master[m[33m)[m Fix image loading issue in ServicesSection and add thumbnail_Designer.png
+* [33mc1b58a7[m Update WhyAihubSection and other project files
+* [33mb126733[m Initialize project using Create React App
+* [33m60a738a[m[33m ([m[1;31morigin/gh-pages[m[33m)[m Update CNAME
+* [33m68d1f50[m Updates
+* [33mb0ffccc[m[33m ([m[1;31malicia/main[m[33m, [m[1;32malicia-main[m[33m)[m Initial commit
