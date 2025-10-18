@@ -50,8 +50,7 @@ function AIAgentServicesSection() {
               <li>Lead qualification and nurturing</li>
             </ul>
             <div className="agent-benefits">
-              <strong>Benefits:</strong> Faster deal closures, improved client satisfaction, reduced administrative overhead attracting investors from all around the globe 
- 
+              <strong>Benefits:</strong> Faster deal closures, improved client satisfaction, reduced administrative overhead attracting investors from all around the globe
             </div>
             <a href="#contact" className="btn btn-primary">Get Started</a>
           </div>
