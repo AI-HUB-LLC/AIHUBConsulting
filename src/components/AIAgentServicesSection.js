@@ -5,7 +5,7 @@ function AIAgentServicesSection() {
   return (
     <section id="ai-agents" className="section ai-agents-section">
       <div className="container">
-        <h2><u>Custom AI Agents for Industry Transformation</u></h2>
+        <h2>Custom AI Agents for Industry Transformation</h2>
         <p className="section-subtitle">
           <b>Your Challenge. Our Intelligence. Infinite Impact</b>
         </p>
@@ -16,7 +16,7 @@ function AIAgentServicesSection() {
           {/* AI Marketing Agents */}
           <div className="ai-agent-card">
             <div className="agent-icon">📈</div>
-            <h3>AI Marketing Agents</h3>
+            <h3>AI Marketing Agents & Social Media Aggregation</h3>
             <p className="agent-description">
               Intelligent marketing automation that understands your brand voice and target audience
             </p>
@@ -37,7 +37,7 @@ function AIAgentServicesSection() {
           {/* AI Real Estate Agents */}
           <div className="ai-agent-card">
             <div className="agent-icon">🏠</div>
-            <h3>AI Real Estate Agents & Block Chain Innovation</h3>
+            <h3>AI Real Estate Agents & Tokenization by Block Chain Innovation</h3>
             <p className="agent-description">
               Virtual real estate assistants that streamline property transactions and client interactions
             </p>
@@ -50,7 +50,7 @@ function AIAgentServicesSection() {
               <li>Lead qualification and nurturing</li>
             </ul>
             <div className="agent-benefits">
-              <strong>Benefits:</strong> Faster deal closures, improved client satisfaction, reduced administrative overhead
+              <strong>Benefits:</strong> Faster deal closures, improved client satisfaction, reduced administrative overhead attracting investors from all around the globe
             </div>
             <a href="#contact" className="btn btn-primary">Get Started</a>
           </div>

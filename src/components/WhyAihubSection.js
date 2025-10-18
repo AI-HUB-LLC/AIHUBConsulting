@@ -1,55 +1,63 @@
 import React from 'react';
 import '../App.css';
+import logo from '../assets/AI HUB Logo Completed.png';
 
 const WHY_CARDS = [
   {
-    icon: '🧩',
-    title: 'Integrated Services from AI to Logistics',
-    text: 'One-stop solution for all your business needs, from cutting-edge AI technology to essential logistics services.'
-  },
-  {
     icon: '👩‍💼',
-    title: 'Woman-Owned + 15 Years of Experience',
-    text: 'Combining diverse perspectives with extensive industry experience to deliver innovative solutions.'
+    title: 'WBENC-Certified WOSB',
+    text: 'Woman-owned, Houston-based, with 15+ years across public and private sectors.'
   },
   {
-    icon: '💡',
-    title: 'Innovation-Driven, Socially Reinvested',
-    text: 'Committed to innovation while making a positive social impact through our reinvestment initiatives.'
+    icon: '🔐',
+    title: 'Ethical, Privacy-First, HIPAA-Aligned',
+    text: 'No-surveillance policy; data belongs to you; built for compliance and trust.'
   },
   {
-    icon: '📜',
-    title: 'Certified & Compliant',
-    text: 'WOSB, SAM, and WBENC certified, ensuring the highest standards of quality and compliance.'
+    icon: '🗣️',
+    title: 'Multilingual & Culturally Aware',
+    text: 'English, Farsi, Arabic, Turkish, Spanish; designed for accessibility and inclusion.'
   },
   {
-    icon: '🏙️',
-    title: 'Mission-Aligned with Smarter Cities',
-    text: 'Dedicated to building intelligent, sustainable, and inclusive urban environments.'
+    icon: '🤝',
+    title: 'Dual-Focus Model',
+    text: 'AI products for aging and accessibility + enterprise-grade consulting services.'
+  },
+  {
+    icon: '📈',
+    title: 'Proven Results',
+    text: 'Smart city projects, AI deployments, and IT transformations delivered with impact.'
   }
 ];
 
 function WhyAihubSection() {
   return (
     <section id="why-aihub" className="section">
-      <h2><u>Why AIHUB?</u></h2>
+      <h2>Why AI HUB?</h2>
+      <div className="why-cards-grid">
+        {WHY_CARDS.map((card, index) => (
+          <React.Fragment key={card.title}>
+            <div className="why-card">
+              <div className="why-card-icon">{card.icon}</div>
+              <h3 className="why-card-title">{card.title}</h3>
+              <p className="why-card-text">{card.text}</p>
+            </div>
+            {index === 2 && (
+              <div className="why-logo-container">
+                <img src={logo} alt="AI Hub Logo" className="why-logo" />
+              </div>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
       <div className="about-highlights">
         <ul>
-          <li><strong>Full-suite consulting</strong> across tech + infrastructure</li>
-          <li><strong>Women-led</strong> with 15+ years' cross-sector experience</li>
-          <li><strong>Socially reinvested:</strong> R&D for AI with impact</li>
-          <li><strong>Registered</strong> with SAM.gov, WBENC, SBA, City of Houston</li>
-          <li><strong>Proven agile delivery</strong> for both public and private sectors</li>
+          <li><strong>Dual divisions:</strong> AI products + AI/IT consulting</li>
+          <li><strong>Compliance-first:</strong> HIPAA, GDPR, and industry standards</li>
+          <li><strong>Human-centered:</strong> Designed for dignity, accessibility, inclusion</li>
+          <li><strong>Certified:</strong> WBENC, WOSB, SAM.gov, SBA, Hire Houston First</li>
+          <li><strong>Outcomes-led:</strong> Measurable, secure, mission-ready results</li>
         </ul>
-      </div>
-      <div className="why-cards-grid">
-        {WHY_CARDS.map(card => (
-          <div className="why-card" key={card.title}>
-            <div className="why-card-icon">{card.icon}</div>
-            <h3 className="why-card-title">{card.title}</h3>
-            <p className="why-card-text">{card.text}</p>
-          </div>
-        ))}
       </div>
     </section>
   );

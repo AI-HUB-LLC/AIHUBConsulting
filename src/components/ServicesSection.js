@@ -5,12 +5,20 @@ import thumbnailDesigner from '../assets/thumbnail_Designer.png';
 function ServicesSection() {
   return (
     <section id="services" className="section services-section">
-      <h2><u>Our Core Services</u></h2>
+      <h2>Core Services & Industry Solutions</h2>
+      <p>We operate through two synergistic divisions:</p>
+      <p>
+        <b>1) AI Product Development</b> — Creating intelligent AI agents and automation platforms across multiple industries, including Technology, Healthcare, Real state, Automative, Manufacturing, Oil and Gas, by providing different AI Agents for  sales enablement, marketing intelligence, social media aggregation, remote health monitoring, real estate tokenization, healthy food catering, smart construction management, accessibility solutions for healthcare and aging care.  Empowering organizations and individuals to work smarter and live better.
+      </p>
+      <p>
+        <b>2) IT & AI Consulting Services</b> — Providing enterprise AI strategy, cloud modernization, and digital transformation services for cities, corporations, and public agencies.
+        AI HUB is founded on ethical AI design, HIPAA-compliant architecture, and multilingual capabilities (English, Spanish, French, German, Arabic, Turkish, Farsi,...).
+      </p>
       <div className="services-grid">
         {/* Technology */}
         <div className="service-card">
           <div className="service-icon">💻</div>
-          <h3>Technology & IT Consulting</h3>
+          <h3>AI & IT Consulting</h3>
           <ul>
           <li>Application & Software Development</li>
           <li>IT Project Management</li>
@@ -26,7 +34,7 @@ function ServicesSection() {
         </div>
         <div className="service-card">
           <div className="service-icon">💻</div>
-          <h3>ERP & Financial Management System</h3>
+          <h3>ERP & Financial Systems</h3>
           <ul>
           <li>ERP System Consulting</li>
           <li>ERP Deployment & Implementation</li>
@@ -56,7 +64,7 @@ function ServicesSection() {
         {/* Construction & Engineering */}
         <div className="service-card">
           <div className="service-icon">🏗️</div>
-          <h3>Smart Construction with AI</h3>
+          <h3>Smart City & Construction</h3>
           <ul>
             <li>IoT Integration for Building Management</li>
             <li>Smart Energy Management Systems</li>
@@ -71,7 +79,7 @@ function ServicesSection() {
         {/* Staffing & Recruitment */}
         <div className="service-card">
           <div className="service-icon">👥</div>
-          <h3>Staffing & Recruitment</h3>
+          <h3>Project Delivery & Staffing</h3>
           <ul>
             <li>AI Training</li>
             <li>IT Engineers, Application Developers, AI Data Scientist, Data Architecture, ML Engineering.</li>
@@ -85,11 +93,11 @@ function ServicesSection() {
 
         <div className="service-card">
           <div className="service-icon"><img src={thumbnailDesigner} style={{width: '100px', height: '100px'}} alt="AI Hub Elder"/></div>
-          <h3>Elderly Care - Products for Aging and Acessability</h3>
+          <h3>Aging & Accessibility Products</h3>
           <ul>
-            <li>Voice-first AI companions & personal assistants featuring modular agents for medication reminders, emotional support, wellness check-ins, entertainment, and cognitive stimulation</li>
-            <li>Dashboard reports to connect elderly with caregivers and family members, giving immediate reports on loved ones.</li>
-            <li>AI-powered “Howdy” check-in calls with proactive mental health interventions, distress detection, and escalation to caregivers or emergency services</li>
+            <li>Voice-first companions: meds, recovery routines, emotional wellbeing, entertainment</li>
+            <li>Family dashboards: secure, HIPAA-aligned insights and alerts</li>
+            <li>“Howdy” automated wellness check-ins with escalation</li>
             
         
           </ul>
