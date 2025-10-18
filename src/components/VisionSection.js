@@ -9,22 +9,22 @@ function VisionSection() {
           <img src="https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg" alt="Vision for smart, inclusive cities"/>
         </div>
         <div className="vision-content">
-          <h2><u>Our Vision</u></h2>
+          <h2>Our Vision</h2>
           <p>
-            To lead the transformation of cities, industries, and institutions into intelligent, inclusive, and resilient ecosystems—powered by automation, innovation, and purpose.
+          Our vision is to harness AI to help humans live better lives and enable industries to work smarter, deliver more, and operate with greater efficiency through human-in-the-loop AI systems.
           </p>
           <p>
-            We envision a future where public and private sector leaders—from municipalities and federal agencies to global oil & gas firms and high-growth tech companies—have access to the tools, talent, and technology they need to:
+          We empower public and private sector leaders with the platforms, expertise, and governance to:
           </p>
-          <ul className="vision-list">
-            <b>
-            <li>Stay competitive</li>
-            <li>Operate efficiently and Faster</li>
-            <li>Serve communities and stakeholders with excellence</li>
-            </b>
+          <ul className="vision-list" text-color="#ffffff">
+            <li><b>Stay competitive</b>, with responsible, practical AI innovation</li>
+            <li><b>Operate efficiently</b>, with secure, scalable infrastructure</li>
+            <li><b>Serve communities</b>, with dignity and excellence</li>
+            
           </ul>
           <p>
-            Through our consulting engagements and social reinvestment model, <b>AI HUB Consulting</b> builds capacity today—and social equity for tomorrow.
+            We reinvest in ethical AI research for aging and accessibility, ensuring progress benefits the most vulnerable first—<b>especially the elderly and people with disabilities,</b>
+            where technology creates independence, safety, and dignity for those who need it most.
           </p>
         </div>
       </div>

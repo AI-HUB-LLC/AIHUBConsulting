@@ -9,12 +9,14 @@ import ContactSection from './components/ContactSection';
 import VisionSection from './components/VisionSection';
 import logo from './assets/AI HUB Logo Completed.png';
 
+
 const NAV_LINKS = [
   { label: 'Mission', href: '#mission' },
   { label: 'About Us', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'AI Agents', href: '#ai-agents' },
   { label: 'Why AIHUB?', href: '#why-aihub' },
+  { label: 'Contact', href: '#contact'}
 ];
 
 function App() {
@@ -61,12 +63,20 @@ function App() {
       </nav>
       <HeroSection />
       <MissionSection />
+      <hr />
       <VisionSection />
+      <hr />
       <AboutSection />
-      <WhyAihubSection />
+      <hr />
       <ServicesSection />
+      <hr />
       <AIAgentServicesSection />
+      <hr />
+      <WhyAihubSection />
+      <hr />
       <ContactSection />
+
+
     </div>
   );
 }
