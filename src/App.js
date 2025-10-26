@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/dark-theme.css';
 import HeroSection from './components/HeroSection';
 import MissionSection from './components/MissionSection';
 import AboutSection from './components/AboutSection';

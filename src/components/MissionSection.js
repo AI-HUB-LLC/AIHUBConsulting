@@ -6,7 +6,7 @@ function MissionSection() {
     <section id="mission" className="section section-bg mission-section">
       <div className="mission-flex">
         <div className="mission-image">
-          <img src={require('../assets/Robot companion.png')} alt="Robot companion" />
+          <img src={require('../assets/image.jpg')} alt="Man an AI" />
         </div>
         <div className="mission-content">
           <h2>Our Mission</h2>
