@@ -5,7 +5,7 @@ import logo from '../assets/AI HUB Logo Completed.png';
 const WHY_CARDS = [
   {
     icon: '👩‍💼',
-    title: 'WBENC-Certified WOSB',
+    title: 'WBEA-Certified WOSB',
     text: 'Woman-owned, Houston-based, with 15+ years across public and private sectors.'
   },
   {
@@ -55,7 +55,7 @@ function WhyAihubSection() {
           <li><strong>Dual divisions:</strong> AI products + AI/IT consulting</li>
           <li><strong>Compliance-first:</strong> HIPAA, GDPR, and industry standards</li>
           <li><strong>Human-centered:</strong> Designed for dignity, accessibility, inclusion</li>
-          <li><strong>Certified:</strong> WBENC, WOSB, SAM.gov, SBA, Hire Houston First</li>
+          <li><strong>Certified:</strong> WBEA, WOSB, SAM.gov, SBA, Hire Houston First</li>
           <li><strong>Outcomes-led:</strong> Measurable, secure, mission-ready results</li>
         </ul>
       </div>

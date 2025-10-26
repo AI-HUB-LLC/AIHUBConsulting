@@ -7,8 +7,8 @@ function HeroSection() {
       <div className="hero-bg" />
 
       <div className="hero-content">
-        <h1>AI HUB LLC — WBENC-Certified WOSB</h1>
-        <h1><u>AI Products, Agents & Consulting for Government, Industry & Startups</u></h1>
+        <h1>AI HUB LLC — WBEA-Certified WOSB</h1>
+        <h1>AI Products, Agents & Consulting for Government, Industry & Startups</h1>
         <p>AI HUB delivers intelligent automation, data-driven insights, and responsible AI innovation to municipalities, federal and state agencies, corporations, and startups ready to modernize their operations.
         We build specialized AI agents for sales, marketing, construction, real estate, healthcare, remote health monitoring, and more. <b>Our flagship product is an AI assistant designed for elderly adults and people with disabilities</b> —empowering independence, safety, and quality of life through voice-first, accessible technology. </p>
         <p><b>Houston based  AI company with 15+ years in AI/IT project and product management and leadership.</b> We build HIPAA-compliant, privacy-first, multilingual systems (English, Spanish, French, German, Arabic, Turkish, Farsi...) that are secure, ethical, and human-centered—bridging technology with purpose and impact.</p>

@@ -6,7 +6,7 @@ function VisionSection() {
     <section id="vision" className="section vision-section">
       <div className="vision-flex">
         <div className="vision-image">
-          <img src="https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg" alt="Vision for smart, inclusive cities"/>
+          <img src={require('../assets/image (1).jpg')}  alt="Vision for smart, inclusive cities"/>
         </div>
         <div className="vision-content">
           <h2>Our Vision</h2>

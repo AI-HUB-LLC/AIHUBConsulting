@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HUB Consulting - Dark Theme Preview</title>
+    <style>
+        /* Import the dark theme styles */
+        @import url('./src/styles/dark-theme.css');
+        
+        /* Additional preview-specific styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .preview-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .preview-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #132742 0%, #1e3a5f 100%);
+            border: 2px solid rgba(61, 213, 152, 0.2);
+            box-shadow: 0 8px 32px rgba(61, 213, 152, 0.1);
+        }
+        
+        .preview-title {
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 20px #3dd598;
+            border-bottom: 3px solid #3dd598;
+            padding-bottom: 1rem;
+        }
+        
+        .preview-subtitle {
+            color: #b8c5d1;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .preview-card {
+            background: linear-gradient(145deg, #132742 0%, #1e3a5f 100%);
+            border-radius: 16px;
+            border: 2px solid rgba(61, 213, 152, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .preview-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(61, 213, 152, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
+            border-radius: 16px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .preview-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: #3dd598;
+            box-shadow: 0 20px 40px rgba(61, 213, 152, 0.3);
+            animation: neonPulse 2s ease-in-out infinite;
+        }
+        
+        .preview-card:hover::before {
+            opacity: 1;
+        }
+        
+        .preview-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3dd598;
+            filter: drop-shadow(0 0 10px #3dd598);
+            transition: all 0.3s ease;
+        }
+        
+        .preview-card:hover .preview-card-icon {
+            color: #ff6b35;
+            filter: drop-shadow(0 0 15px #ff6b35);
+            transform: scale(1.1);
+        }
+        
+        .preview-card h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(61, 213, 152, 0.5);
+        }
+        
+        .preview-card p {
+            color: #b8c5d1;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .preview-button {
+            background: linear-gradient(135deg, #3dd598 0%, #ff6b35 100%);
+            color: #ffffff;
+            border: 2px solid #3dd598;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(61, 213, 152, 0.3);
+        }
+        
+        .preview-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(61, 213, 152, 0.5);
+            animation: neonPulse 1s ease-in-out infinite;
+        }
+        
+        .preview-features {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        
+        .preview-features li {
+            color: #b8c5d1;
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5em;
+        }
+        
+        .preview-features li::before {
+            content: '▶';
+            color: #3dd598;
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            text-shadow: 0 0 10px #3dd598;
+        }
+        
+        .preview-hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #0a1628 0%, #132742 100%);
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .preview-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(90deg, transparent 98%, rgba(61, 213, 152, 0.1) 100%),
+                linear-gradient(0deg, transparent 98%, rgba(255, 107, 53, 0.1) 100%);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+            z-index: 0;
+        }
+        
+        .preview-hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .preview-hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px #3dd598;
+            background: linear-gradient(135deg, #3dd598 0%, #ff6b35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: neonPulse 3s ease-in-out infinite;
+        }
+        
+        .preview-hero p {
+            font-size: 1.3rem;
+            color: #b8c5d1;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @keyframes neonPulse {
+            0%, 100% { 
+                box-shadow: 0 0 5px #3dd598, 0 0 10px #3dd598, 0 0 15px #3dd598;
+            }
+            50% { 
+                box-shadow: 0 0 10px #3dd598, 0 0 20px #3dd598, 0 0 30px #3dd598;
+            }
+        }
+        
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        .preview-navbar {
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid #3dd598;
+            box-shadow: 0 8px 32px rgba(61, 213, 152, 0.3);
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .preview-navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .preview-logo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 0 0 20px #3dd598;
+        }
+        
+        .preview-nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .preview-nav-links a {
+            color: #b8c5d1;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .preview-nav-links a:hover {
+            color: #3dd598;
+            text-shadow: 0 0 20px #3dd598;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="App">
+        <!-- Navigation -->
+        <nav class="preview-navbar">
+            <div class="preview-navbar-content">
+                <div class="preview-logo">AI HUB Consulting</div>
+                <ul class="preview-nav-links">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#ai-agents">AI Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="preview-container">
+            <!-- Hero Section -->
+            <div class="preview-hero">
+                <div class="preview-hero-content">
+                    <h1>AI HUB LLC — WBENC-Certified WOSB</h1>
+                    <p>AI Products, Agents & Consulting for Government, Industry & Startups</p>
+                    <p>AI HUB delivers intelligent automation, data-driven insights, and responsible AI innovation to municipalities, federal and state agencies, corporations, and startups ready to modernize their operations.</p>
+                    <a href="#contact" class="preview-button">Contact Us →</a>
+                    <a href="#capabilities" class="preview-button">View Capabilities →</a>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="preview-section">
+                <h2 class="preview-title">Core Services & Industry Solutions</h2>
+                <p class="preview-subtitle">We operate through two synergistic divisions:</p>
+                <p>AI HUB delivers intelligent automation, data-driven insights, and responsible AI innovation to municipalities, federal and state agencies, corporations, and startups ready to modernize their operations.</p>
+                
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <div class="preview-card-icon">💻</div>
+                        <h3>AI & IT Consulting</h3>
+                        <p>Comprehensive technology solutions for modern businesses</p>
+                        <ul class="preview-features">
+                            <li>Application & Software Development</li>
+                            <li>IT Project Management</li>
+                            <li>Cybersecurity Solutions</li>
+                            <li>Data Management</li>
+                        </ul>
+                        <a href="#contact" class="preview-button">Contact Us</a>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">🏗️</div>
+                        <h3>Smart City & Construction</h3>
+                        <p>IoT integration and smart infrastructure solutions</p>
+                        <ul class="preview-features">
+                            <li>IoT Integration for Building Management</li>
+                            <li>Smart Energy Management Systems</li>
+                            <li>Automated Construction Monitoring</li>
+                            <li>Building Information Modeling (BIM)</li>
+                        </ul>
+                        <a href="#contact" class="preview-button">Contact Us</a>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">🤖</div>
+                        <h3>AI Solutions</h3>
+                        <p>Cutting-edge AI agents and automation platforms</p>
+                        <ul class="preview-features">
+                            <li>AI Assistants & Companions</li>
+                            <li>AI Agent Services for Different Industries</li>
+                            <li>AI Consulting for Business Process</li>
+                            <li>Multi-Agent Orchestration</li>
+                        </ul>
+                        <a href="#ai-agents" class="preview-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Agents Section -->
+            <div class="preview-section">
+                <h2 class="preview-title">Custom AI Agents for Industry Transformation</h2>
+                <p class="preview-subtitle">Your Challenge. Our Intelligence. Infinite Impact</p>
+                <p>At AI HUB Consulting, we don't just create AI agents. We craft intelligent, industry-specific solutions that think, adapt, and thrive in your unique environment.</p>
+                
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <div class="preview-card-icon">📈</div>
+                        <h3>AI Marketing Agents & Social Media Aggregation</h3>
+                        <p>Intelligent marketing automation that understands your brand voice and target audience</p>
+                        <ul class="preview-features">
+                            <li>Content creation and optimization</li>
+                            <li>Social media management and scheduling</li>
+                            <li>Email marketing automation</li>
+                            <li>Customer segmentation and targeting</li>
+                        </ul>
+                        <a href="#contact" class="preview-button">Get Started</a>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">🏠</div>
+                        <h3>AI Real Estate Agents & Tokenization by Block Chain Innovation</h3>
+                        <p>Virtual real estate assistants that streamline property transactions and client interactions</p>
+                        <ul class="preview-features">
+                            <li>Property search and matching</li>
+                            <li>Virtual property tours and walkthroughs</li>
+                            <li>Market analysis and pricing recommendations</li>
+                            <li>Client communication and follow-up</li>
+                        </ul>
+                        <a href="#contact" class="preview-button">Get Started</a>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">💰</div>
+                        <h3>AI Sales Agents</h3>
+                        <p>Intelligent sales automation that qualifies leads and closes deals around the clock</p>
+                        <ul class="preview-features">
+                            <li>Lead qualification and scoring</li>
+                            <li>Sales call scheduling and follow-up</li>
+                            <li>Product recommendations and upselling</li>
+                            <li>Sales pipeline management</li>
+                        </ul>
+                        <a href="#contact" class="preview-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why AIHUB Section -->
+            <div class="preview-section">
+                <h2 class="preview-title">Why Choose AI HUB?</h2>
+                <p class="preview-subtitle">Leading the future of AI innovation</p>
+                
+                <div class="preview-grid">
+                    <div class="preview-card">
+                        <div class="preview-card-icon">⚡</div>
+                        <h3>Cutting-Edge Technology</h3>
+                        <p>Latest AI and machine learning technologies for maximum impact</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">🔒</div>
+                        <h3>Security & Compliance</h3>
+                        <p>HIPAA-compliant architecture with enterprise-grade security</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">🌍</div>
+                        <h3>Multilingual Support</h3>
+                        <p>English, Spanish, French, German, Arabic, Turkish, Farsi, and more</p>
+                    </div>
+                    
+                    <div class="preview-card">
+                        <div class="preview-card-icon">🎯</div>
+                        <h3>Industry Expertise</h3>
+                        <p>15+ years of AI/IT project and product management experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="preview-section">
+                <h2 class="preview-title">Ready to Transform Your Business?</h2>
+                <p class="preview-subtitle">Let's discuss how AI HUB can accelerate your digital transformation</p>
+                <p>Contact us today to schedule a consultation and discover the power of AI-driven solutions.</p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="mailto:feria@aihubagents.com" class="preview-button">Schedule Consultation</a>
+                    <a href="#services" class="preview-button">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
