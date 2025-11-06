@@ -1,7 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 
+
 function ContactSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  // Update form fields
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      // 👇 This is the fetch call you asked about
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus(`❌ ${data.error}`);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatus("❌ Failed to connect to server.");
+    }
+  };
+
   return (
     <section id="contact" className="section contact-section">
       <h2 className="contact-title">Contact Us</h2>
@@ -27,11 +67,41 @@ function ContactSection() {
             <a href="/AI HUB LLC capability statement Sep 2025.pdf" target="_blank" rel="noopener noreferrer">Open Document</a>
           </p>
         </div>
-        <form className="contact-form" onSubmit={e => e.preventDefault()}>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required />
-          <button type="submit" className="btn btn-primary">Send Message</button>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
+          {status && (
+            <p 
+              className="status-message" 
+              data-status={status.includes("✅") ? "success" : status.includes("❌") ? "error" : "sending"}
+            >
+              {status}
+            </p>
+          )}
         </form>
       </div>
     </section>

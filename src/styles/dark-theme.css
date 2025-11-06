@@ -477,6 +477,38 @@
   outline: none;
 }
 
+.status-message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeInUp 0.3s ease-out;
+  color: var(--text-primary);
+}
+
+.status-message[data-status="success"] {
+  background: rgba(61, 213, 152, 0.2);
+  border: 2px solid var(--green-primary);
+  color: var(--green-primary);
+  box-shadow: var(--neon-green);
+}
+
+.status-message[data-status="error"] {
+  background: rgba(255, 107, 53, 0.2);
+  border: 2px solid var(--orange-primary);
+  color: var(--orange-primary);
+  box-shadow: var(--neon-orange);
+}
+
+.status-message[data-status="sending"] {
+  background: rgba(0, 212, 255, 0.2);
+  border: 2px solid #00d4ff;
+  color: #00d4ff;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
 /* About Section - Dark Theme */
 .about-main p {
   color: var(--text-secondary) !important;
